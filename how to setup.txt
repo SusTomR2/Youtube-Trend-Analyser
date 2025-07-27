@@ -1,0 +1,45 @@
+🧠 Step-by-Step Setup
+1. ✅ Get a YouTube API Key
+    Go to Google Cloud Console
+    Create a new project (e.g., "YouTube Analyzer")
+    Go to APIs & Services → Library
+    Search and enable YouTube Data API v3
+    Then go to Credentials → Create API Key
+    Copy the key
+
+2. ✅ Paste API Key in Code
+In your Python script, add this line:
+API_KEY = "YOUR_YOUTUBE_API_KEY"
+
+🛠️ How to Run
+🖥️ Run the script from your terminal:
+python youtube_trending_analysis.py
+📝 When prompted:
+Enter a 2-letter region code (e.g., IN, US, GB): IN
+
+📁 Output Files
+File Name	Description
+trending_videos_IN.csv	#Raw data of top trending videos
+top_views_IN.png	#Bar chart of top 10 videos by views
+top_likes_IN.png	#Bar chart of top 10 videos by likes
+
+✅ Files will auto-generate based on the region code you choose.
+
+📊 Sample Output (India)
+Title	Channel	Views	Likes	Genre	Published
+Bigg Boss Grand Finale	Colors TV	5.2M	240K	Entertainment	2024-11-08
+iPhone 16 Review	Geekyranjit	3.8M	198K	Science & Tech	2024-11-09
+
+📈 Visualizations
+Charts are saved using Plotly + Kaleido:
+    Views by Video Title (top 10)
+    Likes by Video Title (top 10)
+    Colored by Channel or Genre
+
+💬 Common Questions
+Q: What’s the region code?
+Use any ISO 3166-1 alpha-2 country code, like:
+    IN → India
+    US → United States
+    GB → United Kingdom
+    JP → Japan
