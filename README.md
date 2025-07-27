@@ -1,35 +1,24 @@
-# 🎥 YouTube Trending Video Analyzer
+🎥 YouTube Trending Video Analyzer (Python)
 
-A Python-based data analysis project that fetches and visualizes trending YouTube videos for any selected country. This tool uses the YouTube Data API to extract key metrics like views, likes, comments, and genres, then displays insights through charts and exports to CSV.
-
----
-
-## 🚀 Features
-
-- ✅ Fetches real-time trending video data via YouTube Data API v3
-- ✅ User can select a country using 2-letter region codes (e.g., `IN`, `US`, `JP`)
-- ✅ Visualizes top videos by views and likes using Plotly
-- ✅ Displays video genres (e.g., Music, Gaming, Education)
-- ✅ Exports the data to `.csv` and `.png` files
-- ✅ Clean datetime formatting for better reporting
+This is a Python project that fetches **real-time trending YouTube videos** by country using the **YouTube Data API**, and then:
+- Analyzes key metrics (views, likes, comments)
+- Extracts genre/category data
+- Visualizes results with bar charts
+- Exports everything into clean CSV and PNG files
 
 ---
 
-## 📦 Tech Stack
+✨ Features
 
-| Tool / Library              | Purpose                          |
-|-----------------------------|----------------------------------|
-| `Python`                    | Programming language             |
-| `Pandas`                    | Data analysis & manipulation     |
-| `Plotly`                    | Data visualization               |
-| `Kaleido`                   | Saving charts as PNG             |
-| `Google API Client`         | Accessing YouTube Data API       |
+- Get real-time trending videos by country (IN, US, GB, JP, etc.)
+- Automatically converts publish dates to datetime
+- Retrieves the genre (video category) from YouTube
+- Saves the results to a CSV file
+- Creates bar charts using Plotly and saves as PNG
 
 ---
 
-## 🛠️ Setup Instructions
+⚙️ Requirements
 
-1. **Clone this repo**
-   ```bash
-   git clone https://github.com/yourusername/youtube-trending-analyzer.git
-   cd youtube-trending-analyzer
+Install these Python packages
+pip install pandas plotly kaleido google-api-python-client
